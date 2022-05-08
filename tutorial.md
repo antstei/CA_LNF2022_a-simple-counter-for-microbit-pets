@@ -1,9 +1,17 @@
 # The micro:bit pet tutorial
-```template
-```
 
 ## Step 1
-To make a frisky electronic pet, we first let the micro:bit draw a friendly face and let it play the sound "hello" when the it starts processing our program.
+To make a frisky electronic pet, we first let the micro:bit – in addion to let it draw a friendly face – play the sound "hello" when the it starts processing our program.
+```template
+basic.showLeds(`
+    . . . . .
+    . # . # .
+    . . . . .
+    . # # # .
+    . . . . .
+    `)
+```
+
 ```blocks
 basic.showLeds(`
     . . . . .
@@ -52,7 +60,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 ```
 
 ##  Step 4
-Since our electronic pet needs a lot of attention, we let the micro:bit draw a skull face and let it play the sound "mysterious" " after we have not touched our electronic pet for `20` seconds. To make our electronic pet stop working when we leave it alone for `40` seconds, we terminate the execution of our program by selecting the option "höre auf zu zählen". 
+Since our electronic pet needs a lot of attention, we let the micro:bit draw a skull face and let it play the sound "mysterious" " after we have not touched our electronic pet for `20` seconds. To make our electronic pet stop working when we leave it alone for `40` seconds, we terminate the execution of our program by selecting the option ``||Counter:stop counting||``. 
 
 ```block
 Counter.onCountDo(40, CountActions.Stopp, function () {
@@ -61,4 +69,33 @@ Counter.onCountDo(40, CountActions.Stopp, function () {
     basic.showIcon(IconNames.Skull)
 })
 ```
+
+##  Step 5
+Now it is your turn to make our electronic pet happy when we shake for instance our micro:bit, or let it fall asleep when we do not touch it for `30` seconds.
+
+```ghost
+Counter.onCountDo(30, CountActions.Continue, function () {
+    basic.showIcon(IconNames.Asleep)
+    soundExpression.yawn.playUntilDone()
+})
+
+input.onGesture(Gesture.Shake, function () {
+    Counter.resetCounter()
+    basic.showIcon(IconNames.Surprised)
+    soundExpression.giggle.playUntilDone()
+})
+
+input.onButtonPressed(Button.AB, function () {
+    Counter.resetCounter()
+    basic.showLeds(`
+        . # . # .
+        . # . # .
+        . . . . .
+        # . . . #
+        . # # # .
+        `)
+    soundExpression.hello.playUntilDone()
+})
+```
+
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>

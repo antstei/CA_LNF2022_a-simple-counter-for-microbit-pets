@@ -9,7 +9,7 @@ const enum CountActions {
     //% block="zähle weiter"
     Continue,
     //% block="höre auf zu zählen"
-    Stopp
+    Stop
 }
 
 //% block="Zähler"
@@ -52,7 +52,7 @@ namespace Counter {
                     case CountActions.Continue:
                         handler()
                         break
-                    case CountActions.Stopp:
+                    case CountActions.Stop:
                         handler()
                         for (; ;) { }
                 }

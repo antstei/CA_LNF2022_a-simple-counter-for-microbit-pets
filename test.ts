@@ -1,4 +1,4 @@
-Counter.onCountDo(10, CountActions.Stopp, function () {
+Counter.onCountDo(10, CountActions.Stop, function () {
     basic.showIcon(IconNames.Asleep)
 })
 
