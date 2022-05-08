@@ -1,7 +1,15 @@
+### @hideIteration true
+
+### @explicitHints true
+### @diffs true
+
+### @flyoutOnly true
+
 # The micro:bit pet tutorial
 
 ## Step 1
 To make a frisky electronic pet, we first let the micro:bit – in addion to let it draw a friendly face – play the sound ``||music:hello||`` when the micro:bit starts processing our program.
+```template
 basic.showLeds(`
     . . . . .
     . # . # .
@@ -23,7 +31,7 @@ soundExpression.hello.playUntilDone()
 ```
 
 ## Step 2
-To keep track of how long our electronic pet is being ignored, we let the micro:bit count in one-second intervals, starting with `1` at the very beginning of our program's execution.
+To keep track of how long our electronic pet is being ignored, we let the micro:bit count in ``||Counter:one-second intervals||``, starting with `1` at the very beginning of our program's execution.
 
 ```blocks
 basic.showLeds(`
@@ -50,7 +58,7 @@ Counter.onCountDo(20, CountActions.Continue, function () {
 ##  Step 3
 To make our electronic pet happy when we touch the micro:bit logo, we let the micro:bit draw a happy face and let it play the sound ``||music:happy||`` on logo ``||input:touch||``.
 
-Having now satisfied our electronic pet for a while, we let the micro:bit continue counting in one-second intervals, but start over again, that is, beginning with `1`.
+Having now satisfied our electronic pet for a while, we let the micro:bit continue counting in ``||Counter:one-second intervals||``, but start over again, that is, beginning with `1`.
 
 ```block
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
