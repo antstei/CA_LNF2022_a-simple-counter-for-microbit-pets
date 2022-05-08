@@ -1,6 +1,3 @@
-### @diffs true
-### @flyoutOnly true
-
 # The micro:bit pet tutorial
 
 ## Step 1
