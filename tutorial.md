@@ -1,8 +1,4 @@
-### @hideIteration true
-
-### @explicitHints true
 ### @diffs true
-
 ### @flyoutOnly true
 
 # The micro:bit pet tutorial
