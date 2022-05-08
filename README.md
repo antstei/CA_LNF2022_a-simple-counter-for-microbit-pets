@@ -10,5 +10,3 @@ To add this repository can be added as [extension in MakeCode](https://makecode.
 # Tutorial
 
 To start the interactive MakeCode tutorial navigate to [makecode.microbit.org/#tutorial:github:antstei/[…]/tutorial](https://makecode.microbit.org/#tutorial:github:antstei/ca_inf2022_a-simple-counter-for-microbit-pets/tutorial) and follow the instruction on the screen.
-
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
