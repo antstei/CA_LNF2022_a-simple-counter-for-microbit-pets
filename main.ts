@@ -1,18 +1,23 @@
 const enum Intervals {
-    //% block="Sekundentakt"
+    //% block="one-second intervals"
+    //% block.loc.de="Sekundentakt"
     Seconds = 1000,
-    //% block="Minutentakt"
+    //% block="one-minute intervals"
+    //% block.loc.de="Minutentakt"
     Minutes = Seconds * 60
 }
 
 const enum CountActions {
-    //% block="zähle weiter"
+    //% block="continue counting"
+    //% block.loc.de="zähle weiter"
     Continue,
-    //% block="höre auf zu zählen"
+    //% block="stop counting"
+    //% block.loc.de="höre auf zu zählen"
     Stop
 }
 
-//% block="Zähler"
+//% block="Counter"
+//% block.loc.de="Zähler"
 //% weight=110
 //% color="#007A4B" icon="\uf163"
 namespace Counter {  
@@ -22,10 +27,11 @@ namespace Counter {
     let minCount: number = 1;
 
     //% blockId=counter_start_counting_from_min
-    //% block="beginne bei $minCount im $interval zu zählen"
+    //% block="start counting from $minCount in $interval"
+    //% block.loc.de="beginne bei $minCount im $interval zu zählen"
     //% minCount.min=1 minCount.max=100 minCount.defl=1
     //% expandableArgumentMode="toggle"
-    export function startCountingFromMin(minCount: number, interval: Intervals): void {
+    export function startFromMin(minCount: number, interval: Intervals): void {
         currentCount = minCount
         currentInterval = interval
 
@@ -36,16 +42,18 @@ namespace Counter {
     }
 
     //% blockId=counter_start_counting_from_min_again
-    //% block="beginne wieder von vorne zu zählen"
-    export function resetCounter(): void {
+    //% block="start counting over again from the beginning"
+    //% block.loc.de="beginne wieder von vorne zu zählen"
+    export function startFromMinAgain(): void {
         currentCount = minCount
     }
 
-    //% blockId=counter_on_count_do
-    //% block="Wenn bis $countStop gezählt, dann $action und"
-    //% countStop.min=1 countStop.max=100 countStop.defl=40
+    //% blockId=counter_count
+    //% block="On the count of $countStop, $action and"
+    //% block.loc.de="Wenn bis $countStop gezählt, dann $action und"
+    //% countStop.min=1 countStop.max=100 countStop.defl=20
     //% expandableArgumentMode="toggle"
-    export function onCountDo(countStop: number, action: CountActions, handler: () => void) {
+    export function onCountEvent(countStop: number, action: CountActions, handler: () => void) {
         basic.forever(() => {
             if (currentCount == countStop) {
                 switch (action) {
