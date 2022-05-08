@@ -1,1 +1,10 @@
-// Hier kann man Tests durchführen; diese Datei wird nicht kompiliert, wenn dieses Paket als Erweiterung verwendet wird.
+Counter.onCountDo(10, CountActions.Stopp, function () {
+    basic.showIcon(IconNames.Asleep)
+})
+
+Counter.onCountDo(5, CountActions.Continue, function () {
+    basic.showIcon(IconNames.Sad)
+})
+
+basic.showIcon(IconNames.Happy)
+Counter.startCountingFromMin(1, Intervals.Seconds)
