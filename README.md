@@ -1,4 +1,4 @@
-# A Simple Counter for micro:bit Pets 
+# A Simple Counter for Frisky micro:bit Pets 
 
 ## About ![Build Status Abzeichen](https://github.com/antstei/ca_inf2022_a-simple-counter-for-microbit-pets/workflows/MakeCode/badge.svg)
 This MakeCode extension was created as part of the _[CodeAbility Austria](https://codeability.uibk.ac.at)_ project for the _[Lange Nacht der Forschung 2022](https://langenachtderforschung.at/station/2903)_.

@@ -1,4 +1,4 @@
-# The micro:bit Pet Tutorial for the "Lange Nacht der Forschung 2022"
+# A Frisky micro:bit Pet Tutorial for the "Lange Nacht der Forschung 2022"
 
 ## Step 1
 To make a frisky electronic pet, we first let the micro:bit – in addion to let it draw a friendly face – play the sound ``||music:hello||`` when the micro:bit starts processing our program.
@@ -35,7 +35,7 @@ basic.showLeds(`
     . . . . .
     `)
 soundExpression.hello.playUntilDone()
-Counter.startCountingFromMin(1, Intervals.Seconds)
+Counter.startFromMin(1, Intervals.Seconds)
 ```
 
 ##  Step 3
@@ -55,7 +55,7 @@ Having now satisfied our electronic pet for a while, we let the micro:bit contin
 
 ```block
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    Counter.resetCounter()
+    Counter.startFromMinAgain()
     basic.showIcon(IconNames.Happy)
     soundExpression.happy.playUntilDone()
 })
@@ -84,13 +84,13 @@ Counter.onCountEvent(30, CountActions.Continue, function () {
 })
 
 input.onGesture(Gesture.Shake, function () {
-    Counter.resetCounter()
+    Counter.startFromMinAgain()
     basic.showIcon(IconNames.Surprised)
     soundExpression.giggle.playUntilDone()
 })
 
 input.onButtonPressed(Button.AB, function () {
-    Counter.resetCounter()
+    Counter.startFromMinAgain()
     basic.showLeds(`
         . # . # .
         . # . # .
