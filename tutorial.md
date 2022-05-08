@@ -1,4 +1,4 @@
-# The micro:bit pet tutorial
+# The micro:bit Pet Tutorial for the "Lange Nacht der Forschung 2022"
 
 ## Step 1
 To make a frisky electronic pet, we first let the micro:bit – in addion to let it draw a friendly face – play the sound ``||music:hello||`` when the micro:bit starts processing our program.
@@ -42,7 +42,7 @@ Counter.startCountingFromMin(1, Intervals.Seconds)
 To breathe life into our electronic pet, we let the micro:bit draw another sad face and let the micro:bit play the sound ``||music:sad||`` after we have not touched our electronic pet for `20` seconds.
 
 ```block
-Counter.onCountDo(20, CountActions.Continue, function () {
+Counter.onCountEvent(20, CountActions.Continue, function () {
     basic.showIcon(IconNames.Sad)
     soundExpression.sad.playUntilDone()
 })
@@ -67,7 +67,7 @@ Since our electronic pet needs a lot of attention, we let the micro:bit draw a s
 Furthermore, to make our electronic pet stop working when we leave it alone for `40` seconds, we terminate the execution of our program by selecting the option ``||Counter:stop counting||``.
 
 ```block
-Counter.onCountDo(40, CountActions.Stopp, function () {
+Counter.onCountEvent(40, CountActions.Stopp, function () {
     soundExpression.mysterious.playUntilDone()
     music.setBuiltInSpeakerEnabled(false)
     basic.showIcon(IconNames.Skull)
@@ -78,7 +78,7 @@ Counter.onCountDo(40, CountActions.Stopp, function () {
 Now it is your turn to make our electronic pet happy when we shake for instance our micro:bit, or let it fall asleep when we do not touch it for `30` seconds.
 
 ```ghost
-Counter.onCountDo(30, CountActions.Continue, function () {
+Counter.onCountEvent(30, CountActions.Continue, function () {
     basic.showIcon(IconNames.Asleep)
     soundExpression.yawn.playUntilDone()
 })
