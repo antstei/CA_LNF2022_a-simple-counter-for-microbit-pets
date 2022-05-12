@@ -76,7 +76,7 @@ Counter.onCountEvent(40, CountActions.Stopp, function () {
 ```
 
 ##  Step 5
-Jetzt bist du gefragt, unser elektronisches Haustier glücklich zu machen, wenn wir zum Beispiel unseren micro:bit `||input:schütteln|||`` …, oder etwa unser elektronisches Haustier ``||music:gähnen||`` und einschlafen zu lassen, wenn wir es `30` Sekunden lang nicht berühren.
+Jetzt bist du gefragt, unser elektronisches Haustier glücklich zu machen, wenn wir zum Beispiel unseren micro:bit `||input:schütteln||`` …, oder es etwa ``||music:gähnen||`` und einschlafen zu lassen, wenn wir es `30` Sekunden lang nicht berührt haben.
 
 ```ghost
 Counter.onCountEvent(30, CountActions.Continue, function () {
