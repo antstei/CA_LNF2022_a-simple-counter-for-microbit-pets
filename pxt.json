@@ -12,7 +12,8 @@
         "README.md",
         "tutorial-info-cache.json",
         "tutorial.md",
-        "_locales/de/README.md"
+        "_locales/de/README.md",
+        "_locales/de/tutorial.md"
     ],
     "testFiles": [
         "test.ts"

@@ -1,7 +1,7 @@
 # A Frisky micro:bit Pet Tutorial for the "Lange Nacht der Forschung 2022"
 
 ## Step 1
-To make a frisky electronic pet, we first let the micro:bit – in addion to let it draw a friendly face – play the sound ``||music:hello||`` when the micro:bit starts processing our program.
+To program a frisky electronic pet, we first let the micro:bit – in addition to let it draw a friendly face – play the sound ``||music:hello||`` when the micro:bit starts processing our program.
 ```template
 basic.showLeds(`
     . . . . .
@@ -39,7 +39,7 @@ Counter.startFromMin(1, Intervals.Seconds)
 ```
 
 ##  Step 3
-To breathe life into our electronic pet, we let the micro:bit draw another sad face and let the micro:bit play the sound ``||music:sad||`` after we have not touched our electronic pet for `20` seconds.
+To breathe life into our electronic pet, we let the micro:bit draw a sad face and let the micro:bit play the sound ``||music:sad||`` after we have not touched our electronic pet for `20` seconds.
 
 ```block
 Counter.onCountEvent(20, CountActions.Continue, function () {
@@ -62,7 +62,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 ```
 
 ##  Step 4
-Since our electronic pet needs a lot of attention, we let the micro:bit draw a skull face and let it play the sound ``||music:mysterious||`` after we have not touched our electronic pet for `40` seconds.
+Since our electronic pet needs a lot of attention, we let the micro:bit draw a ``||basic:IconNames.Skull||`` face and let it play the sound ``||music:mysterious||`` after we have not touched our electronic pet for `40` seconds.
 
 Furthermore, to make our electronic pet stop working when we leave it alone for `40` seconds, we terminate the execution of our program by selecting the option ``||Counter:stop counting||``.
 
@@ -75,7 +75,7 @@ Counter.onCountEvent(40, CountActions.Stopp, function () {
 ```
 
 ##  Step 5
-Now it is your turn to make our electronic pet happy when we shake for instance our micro:bit, or let it fall asleep when we do not touch it for `30` seconds.
+Now it is your turn to make our electronic pet happy when we ``||input:shake||`` for instance our micro:bit …, or for example let it ``||music:yawn||`` and fall asleep when we do not touch it for `30` seconds.
 
 ```ghost
 Counter.onCountEvent(30, CountActions.Continue, function () {
