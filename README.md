@@ -13,3 +13,6 @@ To add this repository as [extension in MakeCode](https://makecode.microbit.org/
 
 ## Tutorial
 To start the interactive MakeCode tutorial navigate to [makecode.microbit.org/#tutorial:github:antstei/[…]/tutorial](https://makecode.microbit.org/#tutorial:github:antstei/ca_inf2022_a-simple-counter-for-microbit-pets/tutorial) and follow the instruction on the screen.
+
+## References
+Micro:bit Educational Foundation. (2021). _[micro:bit pet](https://www.microbit.org/projects/make-it-code-it/microbit-pet/)_.

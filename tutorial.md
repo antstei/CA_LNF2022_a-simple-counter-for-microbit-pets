@@ -77,6 +77,9 @@ Counter.onCountEvent(40, CountActions.Stopp, function () {
 ##  Step 5
 Now it is your turn to make our electronic pet happy when we ``||input:shake||`` for instance our micro:bit …, or for example let it ``||music:yawn||`` and fall asleep when we do not touch it for `30` seconds.
 
+### References
+Micro:bit Educational Foundation. (2021). _[micro:bit pet](https://www.microbit.org/projects/make-it-code-it/microbit-pet/)_.
+
 ```ghost
 Counter.onCountEvent(30, CountActions.Continue, function () {
     basic.showIcon(IconNames.Asleep)

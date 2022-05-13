@@ -25,7 +25,7 @@ soundExpression.hello.playUntilDone()
 ```
 
 ## Step 2
-Um zu erkennen, wie lange unser elektronisches Haustier ignoriert wird, lassen wir den micro:bit im ``||Counter:Sekundentakt||`` zählen. Dafür fangen wir ``||basic:beim Start||`` des Programms mit `1` zu zählen an.
+Um zu erkennen, wie lange unser elektronisches Haustier ignoriert wird, lassen wir den micro:bit im ``||Counter:Sekundentakt||`` zählen. Dafür fangen wir ``||basic:beim Start||`` des Programms bei `1` zu zählen an.
 
 ```blocks
 basic.showLeds(`
@@ -52,7 +52,7 @@ Counter.onCountEvent(20, CountActions.Continue, function () {
 ##  Step 3
 Damit unser elektronisches Haustier sich freut, sobald wir das micro:bit-Logo berühren, lassen wir den micro:bit ein glückliches Gesicht anzeigen und den Ton ``||music:glücklich||`` abspielen, wenn das Logo ``||input:berührt|||`` wird.
 
-Da unser elektronisches Haustier inzwischen eine Zeit lang zufrieden ist, lassen wir den micro:bit im ``||Counter:Sekundentakt||`` weiter zählen, fangen dabei allerdings wieder von vorne mit `1` an.
+Da unser elektronisches Haustier inzwischen eine Zeit lang zufrieden ist, lassen wir den micro:bit im ``||Counter:Sekundentakt||`` weiter zählen, fangen dabei allerdings ``||Counter:wieder von vorne||`` bei `1` an.
 
 ```block
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
@@ -77,6 +77,9 @@ Counter.onCountEvent(40, CountActions.Stopp, function () {
 
 ##  Step 5
 Jetzt bist du gefragt, unser elektronisches Haustier glücklich zu machen, wenn wir zum Beispiel unseren micro:bit `||input:schütteln||`` …, oder es etwa ``||music:gähnen||`` und einschlafen zu lassen, wenn wir es `30` Sekunden lang nicht berührt haben.
+
+### Literatur
+Micro:bit Educational Foundation. (2021). _[micro:bit pet](https://www.microbit.org/projects/make-it-code-it/microbit-pet/)_.
 
 ```ghost
 Counter.onCountEvent(30, CountActions.Continue, function () {

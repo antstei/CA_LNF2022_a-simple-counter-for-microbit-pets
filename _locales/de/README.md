@@ -14,3 +14,6 @@ Um dieses Repository als eine [Erweiterung in MakeCode](https://makecode.microbi
 
 ## Tutorial
 Um das interaktive MakeCode-Tutorial zu starten, rufe [makecode.microbit.org/#tutorial:github:antstei/[...]/tutorial](https://makecode.microbit.org/#tutorial:github:antstei/ca_inf2022_a-simple-counter-for-microbit-pets/tutorial) auf und folge den Anweisungen auf dem Bildschirm.
+
+## Literatur
+Micro:bit Educational Foundation. (2021). _[micro:bit pet](https://www.microbit.org/projects/make-it-code-it/microbit-pet/)_.
