@@ -1,7 +1,7 @@
 # Ein verspieltes micro:bit-Pet-Tutorial für die „Lange Nacht der Forschung 2022"
 
 ## Step 1
-Um ein verspieltes elektronisches Haustier zu programmieren, lassen wir den micro:bit – zusätzlich zum Anzeigen eines freundlichen Gesichts – den Ton ``||music:Hallo||`` abspielen, wenn der micro:bit beginnt unser Programm abzuarbeiten.
+Um ein verspieltes elektronisches Haustier zu programmieren, lassen wir den micro:bit – zusätzlich zum Anzeigen eines freundlichen Gesichts – den Ton ``||music:Hallo||`` ``||basic:beim Start||`` des Programms abspielen.
 
 ```template
 basic.showLeds(`
@@ -39,7 +39,7 @@ soundExpression.hello.playUntilDone()
 Counter.startFromMin(1, Intervals.Seconds)
 ```
 
-##  Step 3
+## Step 3
 Um unserer elektronisches Haustier zum Leben zu erwecken, lassen wir den micro:bit ein trauriges Gesicht anzeigen und den micro:bit den Ton ``||music:traurig||`` abspielen, nachdem wir unser elektronisches Haustier für `20` Sekunden nicht berührt haben.
 
 ```block
@@ -49,7 +49,7 @@ Counter.onCountEvent(20, CountActions.Continue, function () {
 })
 ```
 
-##  Step 3
+## Step 4
 Damit unser elektronisches Haustier sich freut, sobald wir das micro:bit-Logo berühren, lassen wir den micro:bit ein glückliches Gesicht anzeigen und den Ton ``||music:glücklich||`` abspielen, wenn das Logo ``||input:berührt|||`` wird.
 
 Da unser elektronisches Haustier inzwischen eine Zeit lang zufrieden ist, lassen wir den micro:bit im ``||Counter:Sekundentakt||`` weiter zählen, fangen dabei allerdings ``||Counter:wieder von vorne||`` bei `1` an.
@@ -62,7 +62,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 ```
 
-##  Step 4
+## Step 5
 Weil unser elektronisches Haustier viel Aufmerksamkeit braucht, lassen wir den micro:bit ein ``||basic:Totenkopf||``-Gesicht anzeigen und den Ton ``||music:geheimnisvoll||`` abspielen, nachdem wir unser elektronisches Haustier für `40` Sekunden nicht angefasst haben.
 
 Damit unser elektronisches Haustier außerdem nicht mehr funktioniert, wenn wir es `40` Sekunden lang nicht in die Hand genommen haben, beenden wir die Ausführung unseres Programms indem wir die Option „``||Counter:höre auf zu zählen||``" auswählen.
@@ -75,7 +75,7 @@ Counter.onCountEvent(40, CountActions.Stopp, function () {
 })
 ```
 
-##  Step 5
+## Step 6
 Jetzt bist du gefragt, unser elektronisches Haustier glücklich zu machen, wenn wir zum Beispiel unseren micro:bit `||input:schütteln||`` …, oder es etwa ``||music:gähnen||`` und einschlafen zu lassen, wenn wir es `30` Sekunden lang nicht berührt haben.
 
 ### Literatur

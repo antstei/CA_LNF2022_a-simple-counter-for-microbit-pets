@@ -13,7 +13,8 @@
         "tutorial-info-cache.json",
         "tutorial.md",
         "_locales/de/README.md",
-        "_locales/de/tutorial.md"
+        "_locales/de/tutorial.md",
+        "tutorial_advanced.md"
     ],
     "testFiles": [
         "test.ts"

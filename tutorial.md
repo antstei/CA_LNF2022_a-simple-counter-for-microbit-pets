@@ -38,7 +38,7 @@ soundExpression.hello.playUntilDone()
 Counter.startFromMin(1, Intervals.Seconds)
 ```
 
-##  Step 3
+## Step 3
 To breathe life into our electronic pet, we let the micro:bit draw a sad face and let the micro:bit play the sound ``||music:sad||`` after we have not touched our electronic pet for `20` seconds.
 
 ```block
@@ -48,7 +48,7 @@ Counter.onCountEvent(20, CountActions.Continue, function () {
 })
 ```
 
-##  Step 3
+## Step 4
 To make our electronic pet happy when we touch the micro:bit logo, we let the micro:bit draw a happy face and let it play the sound ``||music:happy||`` on logo ``||input:touch||``.
 
 Having now satisfied our electronic pet for a while, we let the micro:bit continue counting in ``||Counter:one-second intervals||``, but start over again, that is, beginning with `1`.
@@ -61,7 +61,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 ```
 
-##  Step 4
+## Step 5
 Since our electronic pet needs a lot of attention, we let the micro:bit draw a ``||basic:IconNames.Skull||`` face and let it play the sound ``||music:mysterious||`` after we have not touched our electronic pet for `40` seconds.
 
 Furthermore, to make our electronic pet stop working when we leave it alone for `40` seconds, we terminate the execution of our program by selecting the option ``||Counter:stop counting||``.
@@ -74,7 +74,7 @@ Counter.onCountEvent(40, CountActions.Stopp, function () {
 })
 ```
 
-##  Step 5
+## Step 6
 Now it is your turn to make our electronic pet happy when we ``||input:shake||`` for instance our micro:bit …, or for example let it ``||music:yawn||`` and fall asleep when we do not touch it for `30` seconds.
 
 ### References
