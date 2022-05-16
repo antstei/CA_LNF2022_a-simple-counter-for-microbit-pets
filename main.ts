@@ -42,8 +42,8 @@ namespace Counter {
     }
 
     //% blockId=counter_start_counting_from_min_again
-    //% block="start counting over again from the beginning"
-    //% block.loc.de="beginne wieder von vorne zu zählen"
+    //% block="start counting over again from the beginning using the same interval"
+    //% block.loc.de="beginne wieder von vorne im gleichen Takt zu zählen"
     export function startFromMinAgain(): void {
         currentCount = minCount
     }

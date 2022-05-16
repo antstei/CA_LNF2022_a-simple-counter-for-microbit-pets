@@ -25,7 +25,7 @@ soundExpression.hello.playUntilDone()
 
 ## Step 2
 To keep track of how long our electronic pet is being ignored, we let the micro:bit count in one-second intervals, starting with `1` at the very beginning of our program's execution.
-To accomplish this, we ``||varible:make a Variable||`` named "``||varible:counter||``" and ``||varible:set counter to 1||``. Furthermore, we make use of the ```||basic:forever||``` loop to ```||basic:pause||``` for `1` Second ≙ `1000` Milliseconds before we ``||varible:change counter by 1||`` in each iteration.
+To accomplish this, we ``||varible:make a Variable||`` named "``||varible:counter||``" and ``||varible:set counter to 1||``. Furthermore, we make use of the ``||basic:forever||`` loop to ``||basic:pause||`` for `1` Second ≙ `1000` Milliseconds before we ``||varible:change counter by 1||`` in each iteration.
 
 ```blocks
 basic.showLeds(`
