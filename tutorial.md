@@ -55,9 +55,9 @@ Having now satisfied our electronic pet for a while, we let the micro:bit contin
 
 ```block
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    Counter.startFromMinAgain()
     basic.showIcon(IconNames.Happy)
     soundExpression.happy.playUntilDone()
+    Counter.startFromMinAgain()
 })
 ```
 
@@ -68,8 +68,8 @@ Furthermore, to make our electronic pet stop working when we leave it alone for 
 
 ```block
 Counter.onCountEvent(15, CountActions.Stopp, function () {
-    soundExpression.mysterious.playUntilDone()
     basic.showIcon(IconNames.Skull)
+    soundExpression.mysterious.playUntilDone()
 })
 ```
 

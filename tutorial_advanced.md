@@ -45,14 +45,14 @@ basic.forever(function () {
 ```
 
 ## Step 3
-To breathe life into our electronic pet, we let the micro:bit draw a unhappy face and let the micro:bit play a sad sound after we have not touched our electronic pet for `20` seconds.
-To do so, we insert a ``||logic:if-then||`` statement  in the ``||basic:forever||`` loop to check ``||logic:if||`` ``||variable:counter = 20||``. If this is the case, we let the micro:bit draw a sad face and let the micro:bit play the sound ``||music:sad||``. 
+To breathe life into our electronic pet, we let the micro:bit draw a unhappy face and let the micro:bit play a sad sound after we have not touched our electronic pet for `5` seconds.
+To do so, we insert a ``||logic:if-then||`` statement  in the ``||basic:forever||`` loop to check ``||logic:if||`` ``||variable:counter = 5||``. If this is the case, we let the micro:bit draw a sad face and let the micro:bit play the sound ``||music:sad||``. 
 
 ```block
 basic.forever(function () {
     basic.pause(1000)
     counter += 1
-    if (counter == 20) {
+    if (counter == 5) {
         basic.showIcon(IconNames.Sad)
         soundExpression.sad.playUntilDone()
     }
@@ -73,16 +73,15 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 ```
 
 ## Step 5
-Since our electronic pet needs a lot of attention, we let the micro:bit draw a strange face and let it play a weird sound after we have not touched our electronic pet for `40` seconds.
-As before, we insert another ``||logic:if-then||`` statement in the ``||basic:forever||`` loop to check ``||logic:if||`` ``||variable:counter = 40||``. If this is the case, we let the micro:bit play the sound ``||music:mysterious||``.
+Since our electronic pet needs a lot of attention, we let the micro:bit draw a strange face and let it play a weird sound after we have not touched our electronic pet for `15` seconds.
+As before, we insert another ``||logic:if-then||`` statement in the ``||basic:forever||`` loop to check ``||logic:if||`` ``||variable:counter = 15||``. If this is the case, we let the micro:bit play the sound ``||music:mysterious||``.
 
-Furthermore, to make our electronic pet stop working when we leave it alone for `40` seconds, we terminate the execution of our program.
+Furthermore, to make our electronic pet stop working when we leave it alone for `15` seconds, we terminate the execution of our program.
 To do so, we ``||music:set the built in speaker off||`` and let the micro:bit draw a ``||basic:IconNames.Skull||`` face forever, i.e., leveraging an infinite ``||basic:loop||``.
 
 ```block
-if (counter == 40) {
+if (counter == 15) {
     soundExpression.mysterious.playUntilDone()
-    music.setBuiltInSpeakerEnabled(false)
     while (true) {
         basic.showIcon(IconNames.Skull)
     }
@@ -90,7 +89,7 @@ if (counter == 40) {
 ```
 
 ## Step 6
-Now it is your turn to make our electronic pet happy when we ``||input:shake||`` for instance our micro:bit …, or for example let it ``||music:yawn||`` and fall asleep when we do not touch it for `30` seconds.
+Now it is your turn to make our electronic pet happy when we ``||input:shake||`` for instance our micro:bit …, or for example let it ``||music:yawn||`` and fall asleep when we do not touch it for `10` seconds.
 
 ### References
 Micro:bit Educational Foundation. (2021). _[micro:bit pet](https://www.microbit.org/projects/make-it-code-it/microbit-pet/)_.

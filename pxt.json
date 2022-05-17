@@ -14,7 +14,8 @@
         "tutorial.md",
         "_locales/de/README.md",
         "_locales/de/tutorial.md",
-        "tutorial_advanced.md"
+        "tutorial_advanced.md",
+        "_locales/de/tutorial_advanced.md"
     ],
     "testFiles": [
         "test.ts"

@@ -1,7 +1,7 @@
 # Ein verspieltes micro:bit-Pet-Tutorial für die „Lange Nacht der Forschung 2022"
 
 ## Step 1
-Um ein verspieltes elektronisches Haustier zu programmieren, lassen wir den micro:bit – zusätzlich zum Anzeigen eines freundlichen Gesichts – den Ton ``||music:Hallo||`` ``||basic:beim Start||`` des Programms abspielen.
+Um ein verspieltes elektronisches Haustier zu programmieren, lassen wir den micro:bit – zusätzlich zum Anzeigen eines ``||basic:freundlichen||`` Gesichts – den Ton ``||music:Hallo||`` ``||basic:beim Start||`` des Programms abspielen.
 
 ```template
 basic.showLeds(`
@@ -40,7 +40,7 @@ Counter.startFromMin(1, Intervals.Seconds)
 ```
 
 ## Step 3
-Um unserer elektronisches Haustier zum Leben zu erwecken, lassen wir den micro:bit ein trauriges Gesicht anzeigen und den micro:bit den Ton ``||music:traurig||`` abspielen, nachdem wir unser elektronisches Haustier für `5` Sekunden nicht berührt haben.
+Um unserer elektronisches Haustier zum Leben zu erwecken, lassen wir den micro:bit ein ``||basic:trauriges||`` Gesicht anzeigen und den micro:bit den Ton ``||music:traurig||`` abspielen, nachdem wir unser elektronisches Haustier für `5` Sekunden nicht berührt haben.
 
 Damit unser elektronisches Haustier weiterhin funktioniert, wenn wir es `5` Sekunden lang nicht in die Hand genommen haben, lassen wir unser Program weiter ausführen indem wir die Option „``||Counter:zähle weiter||``" auswählen.
 
@@ -58,9 +58,9 @@ Da unser elektronisches Haustier inzwischen eine Zeit lang zufrieden ist, lassen
 
 ```block
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    Counter.startFromMinAgain()
     basic.showIcon(IconNames.Happy)
     soundExpression.happy.playUntilDone()
+    Counter.startFromMinAgain()
 })
 ```
 
@@ -71,8 +71,8 @@ Damit unser elektronisches Haustier außerdem nicht mehr funktioniert, wenn wir 
 
 ```block
 Counter.onCountEvent(15, CountActions.Stopp, function () {
-    soundExpression.mysterious.playUntilDone()
     basic.showIcon(IconNames.Skull)
+    soundExpression.mysterious.playUntilDone()
 })
 ```
 

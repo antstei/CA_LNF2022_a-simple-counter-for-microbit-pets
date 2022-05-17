@@ -29,7 +29,7 @@ namespace Counter {
     //% blockId=counter_start_counting_from_min
     //% block="start counting from $minCount in $interval"
     //% block.loc.de="beginne bei $minCount im $interval zu zählen"
-    //% minCount.min=1 minCount.max=100 minCount.defl=1
+    //% minCount.min=1 minCount.max=25 minCount.defl=1
     //% expandableArgumentMode="toggle"
     export function startFromMin(minCount: number, interval: Intervals): void {
         currentCount = minCount
@@ -51,7 +51,7 @@ namespace Counter {
     //% blockId=counter_count
     //% block="On the count of $countStop, $action and"
     //% block.loc.de="Wenn bis $countStop gezählt, dann $action und"
-    //% countStop.min=1 countStop.max=100 countStop.defl=20
+    //% countStop.min=1 countStop.max=25 countStop.defl=5
     //% expandableArgumentMode="toggle"
     export function onCountEvent(countStop: number, action: CountActions, handler: () => void) {
         basic.forever(() => {
