@@ -1,4 +1,4 @@
-# Ein verspieltes micro:bit-Pet-Tutorial für die „Lange Nacht der Forschung 2022"
+# Ein verspieltes micro:bit-Pet-Tutorial für die „LNF 2022"
 
 ## Step 1
 Um ein verspieltes elektronisches Haustier zu programmieren, lassen wir den micro:bit – zusätzlich zum Anzeigen eines ``||basic:freundlichen||`` Gesichts – den Ton ``||music:Hallo||`` ``||basic:beim Start||`` des Programms abspielen.

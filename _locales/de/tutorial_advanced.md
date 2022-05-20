@@ -1,4 +1,4 @@
-# Ein fortgeschrittenes verspieltes micro:bit-Pet-Tutorial für die „Lange Nacht der Forschung 2022"
+# Ein fortgeschrittenes verspieltes micro:bit-Pet-Tutorial für die „LNF 2022"
 
 ## Step 1
 Um ein verspieltes elektronisches Haustier zu programmieren, lassen wir den micro:bit – zusätzlich zum Anzeigen eines ``||basic:freundlichen||`` Gesichts – den Ton ``||music:Hallo||`` ``||basic:beim Start||`` des Programms abspielen.
@@ -49,7 +49,7 @@ basic.forever(function () {
 
 ## Step 3
 Um unserer elektronisches Haustier zum Leben zu erwecken, lassen wir den micro:bit ein trauriges Gesicht anzeigen und einen müden Ton abspielen, nachdem wir unser elektronisches Haustier für `5` Sekunden nicht berührt haben.
-Dafür fügen wir eine ``||logic:wenn-dann||``-Anweisung in die ``||basic:dauerhaft||``-Schleife ein, um den micro:bit überprüfen zu lassen, ob ``||variable:vergangenes_sekunden = 5||``. Wenn dies der Fall ist, lassen wir den micro:bit ein ``||basic:trauriges||`` Gesicht anzeigen und den Sound ``||music:sad||`` abspielen. 
+Dafür fügen wir eine ``||logic:wenn-dann||``-Anweisung in die ``||basic:dauerhaft||``-Schleife ein, um den micro:bit überprüfen zu lassen, ob ``||variable:vergangenes_sekunden = 5||``. Wenn dies der Fall ist, lassen wir den micro:bit ein ``||basic:trauriges||`` Gesicht anzeigen und den Sound ``||music:traurig||`` abspielen. 
 
 ```block
 basic.forever(function () {

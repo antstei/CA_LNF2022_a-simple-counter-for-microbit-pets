@@ -1,4 +1,4 @@
-# A Frisky micro:bit Pet Tutorial for the "Lange Nacht der Forschung 2022"
+# A Frisky micro:bit Pet Tutorial for the "LNF 2022"
 
 ## Step 1
 To program a frisky electronic pet, we first let the micro:bit – in addition to let it draw a friendly face – play the sound ``||music:hello||`` when the micro:bit starts processing our program.
