@@ -1,6 +1,6 @@
 {
     "name": "[CodeAbility Austria] LNF 2022 – A simple counter for micro:bit pets",
-    "version": "1.5.6",
+    "version": "1.5.7",
     "description": "",
     "dependencies": {
         "core": "*",
