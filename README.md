@@ -12,7 +12,7 @@ To add this repository as [extension in MakeCode](https://makecode.microbit.org/
 4. search for "https://github.com/antstei/ca_lnf2022_a-simple-counter-for-microbit-pets" and select this extension
 
 ## Tutorial
-To start the interactive MakeCode tutorial navigate to [makecode.microbit.org/#tutorial:github:antstei/[…]/tutorial](https://makecode.microbit.org/#tutorial:github:antstei/ca_lnf2022_a-simple-counter-for-microbit-pets/tutorial) and follow the instruction on the screen.
+To start the interactive MakeCode tutorial navigate to [makecode.microbit.org/#tutorial:github:antstei/[…]/tutorial](https://makecode.microbit.org/#tutorial:github:antstei/ca_lnf2022_a-simple-counter-for-microbit-pets/tutorial) – or for a micro:bit version 1 [makecode.microbit.org/#tutorial:github:antstei/[...]/tutorial_v1](https://makecode.microbit.org/#tutorial:github:antstei/ca_lnf2022_a-simple-counter-for-microbit-pets/tutorial_v1) – and follow the instruction on the screen.
 
 ## References
 Micro:bit Educational Foundation. (2021). _[micro:bit pet](https://www.microbit.org/projects/make-it-code-it/microbit-pet/)_.
