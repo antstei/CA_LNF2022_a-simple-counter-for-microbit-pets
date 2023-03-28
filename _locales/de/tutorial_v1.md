@@ -49,7 +49,7 @@ Counter.onCountEvent(5, CountActions.Continue, function () {
 ```
 
 ## Step 4
-Damit unser elektronisches Haustier sich freut, sobald wir Taster _A_ drücken, lassen wir den micro:bit ein ``||basic:glückliches||`` Gesicht anzeigen, wenn ||input:wenn Knopf A geklickt||` wird.
+Damit unser elektronisches Haustier sich freut, sobald wir Taster Ⓐ drücken, lassen wir den micro:bit ein ``||basic:glückliches||`` Gesicht anzeigen, wenn ||input:wenn Knopf A geklickt||` wird.
 
 Da unser elektronisches Haustier inzwischen eine Zeit lang zufrieden ist, lassen wir den micro:bit im ``||Counter:gleichen Takt||`` weiter zählen, fangen dabei allerdings ``||Counter:wieder von vorne||``, also bei `1` an.
 
