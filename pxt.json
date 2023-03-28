@@ -15,13 +15,14 @@
         "_locales/de/README.md",
         "_locales/de/tutorial.md",
         "tutorial_advanced.md",
-        "_locales/de/tutorial_advanced.md"
+        "_locales/de/tutorial_advanced.md",
+        "tutorial_v1.md"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "4.0.18",
+        "target": "5.0.12",
         "targetId": "microbit"
     },
     "supportedTargets": [
