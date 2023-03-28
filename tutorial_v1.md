@@ -72,7 +72,7 @@ Counter.onCountEvent(15, CountActions.Stopp, function () {
 ```
 
 ## Step 6
-Jetzt bist du gefragt, unser elektronisches Haustier glücklich zu machen, wenn wir zum Beispiel unseren micro:bit ``||input:schütteln||`` …, oder es etwa mit einem ``||basic:schlafend||`` Gesicht einschlafen zu lassen, wenn wir es `10` Sekunden lang nicht berührt haben.
+Jetzt bist du gefragt, unser elektronisches Haustier glücklich zu machen, wenn wir zum Beispiel unseren micro:bit ``||input:schütteln||`` …, oder es etwa mit einem ``||basic:schlafendes||`` Gesicht einschlafen zu lassen, wenn wir es `10` Sekunden lang nicht berührt haben.
 
 ### Literatur
 Micro:bit Educational Foundation. (2021). _[micro:bit pet](https://www.microbit.org/projects/make-it-code-it/microbit-pet/)_.
@@ -96,7 +96,6 @@ input.onButtonPressed(Button.AB, function () {
         # . . . #
         . # # # .
         `)
-    soundExpression.hello.playUntilDone()
 })
 ```
 
