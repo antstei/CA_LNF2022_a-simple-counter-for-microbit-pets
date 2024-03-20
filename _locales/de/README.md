@@ -13,7 +13,7 @@ Um dieses Repository als eine [Erweiterung in MakeCode](https://makecode.microbi
 4. suche nach "https://github.com/antstei/ca_lnf2022_a-simple-counter-for-microbit-pets" und wähle diese Erweiterung aus den Suchvorschlägen.
 
 ## Tutorial
-Um das interaktive MakeCode-Tutorial zu starten, rufe [makecode.microbit.org/#tutorial:github:antstei/[...]/tutorial](https://makecode.microbit.org/#tutorial:github:antstei/ca_lnf2022_a-simple-counter-for-microbit-pets/tutorial) – bzw. für einen micro:bit der Version 1 [makecode.microbit.org/#tutorial:github:antstei/[...]/tutorial_v1](https://makecode.microbit.org/#tutorial:github:antstei/ca_lnf2022_a-simple-counter-for-microbit-pets/tutorial_v1) – auf und folge den Anweisungen auf dem Bildschirm.
+Um das interaktive MakeCode-Tutorial zu starten, rufe [makecode.microbit.org/#tutorial:github:antstei/[...]/tutorial](https://makecode.microbit.org/#tutorial:github:antstei/ca_lnf2022_a-simple-counter-for-microbit-pets/tutorial) – bzw. für einen micro:bit der Version 1 [makecode.microbit.org/#tutorial:github:antstei/[...]/tutorial_v1-help](https://makecode.microbit.org/#tutorial:github:antstei/ca_lnf2022_a-simple-counter-for-microbit-pets/tutorial_v1-help) für ein Tutorial mit und [makecode.microbit.org/#tutorial:github:antstei/[...]/tutorial_v1](https://makecode.microbit.org/#tutorial:github:antstei/ca_lnf2022_a-simple-counter-for-microbit-pets/tutorial_v1) für ein Tutorial ohne Tipps – auf und folge den Anweisungen auf dem Bildschirm.
 
 ## Literatur
 Micro:bit Educational Foundation. (2021). _[micro:bit pet](https://www.microbit.org/projects/make-it-code-it/microbit-pet/)_.
