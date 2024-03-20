@@ -13,7 +13,7 @@ basic.showLeds(`
     `)
 ```
 
-```ghost
+```blocks
 basic.showLeds(`
     . . . . .
     . # . # .
@@ -26,7 +26,7 @@ basic.showLeds(`
 ## Step 2
 Um zu erkennen, wie lange unser elektronisches Haustier ignoriert wird, lassen wir den micro:bit im ``||Counter:Sekundentakt||`` zählen. Dafür fangen wir ``||basic:beim Start||`` des Programms bei `1` zu zählen an.
 
-```ghost
+```blocks
 basic.showLeds(`
     . . . . .
     . # . # .
@@ -42,7 +42,7 @@ Um unser elektronisches Haustier zum Leben zu erwecken, lassen wir den micro:bit
 
 Damit unser elektronisches Haustier weiterhin funktioniert, wenn wir es `5` Sekunden lang nicht in die Hand genommen haben, lassen wir unser Programm weiter ausführen, indem wir die Option „``||Counter:zähle weiter||``" auswählen.
 
-```ghost
+```block
 Counter.onCountEvent(5, CountActions.Continue, function () {
     basic.showIcon(IconNames.Sad)
 })
@@ -53,7 +53,7 @@ Damit unser elektronisches Haustier sich freut, sobald wir Taster Ⓐ drücken, 
 
 Da unser elektronisches Haustier inzwischen eine Zeit lang zufrieden ist, lassen wir den micro:bit im ``||Counter:gleichen Takt||`` weiter zählen, fangen dabei allerdings ``||Counter:wieder von vorne||``, also bei `1` an.
 
-```ghost
+```block
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Happy)
     Counter.startFromMinAgain()
@@ -65,7 +65,7 @@ Weil unser elektronisches Haustier viel Aufmerksamkeit braucht, lassen wir den m
 
 Damit unser elektronisches Haustier außerdem nicht mehr funktioniert, wenn wir es `15` Sekunden lang nicht in die Hand genommen haben, beenden wir die Ausführung unseres Programms, indem wir die Option „``||Counter:höre auf zu zählen||``" auswählen.
 
-```ghost
+```block
 Counter.onCountEvent(15, CountActions.Stopp, function () {
     basic.showIcon(IconNames.Skull)
 })
@@ -99,4 +99,4 @@ input.onButtonPressed(Button.AB, function () {
 })
 ```
 
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>asd
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>

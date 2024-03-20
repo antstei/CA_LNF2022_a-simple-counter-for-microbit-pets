@@ -17,13 +17,14 @@
         "tutorial_advanced.md",
         "_locales/de/tutorial_advanced.md",
         "tutorial_v1.md",
-        "_locales/de/tutorial_v1.md"
+        "_locales/de/tutorial_v1.md",
+        "tutorial_v1-help.md"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "5.0.12",
+        "target": "6.0.25",
         "targetId": "microbit"
     },
     "supportedTargets": [
