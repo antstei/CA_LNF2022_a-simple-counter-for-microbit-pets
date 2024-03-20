@@ -1,4 +1,4 @@
-# Ein verspieltes micro:bit-Pet-Tutorial für die „Campustag Sillgasse 2023"
+# Ein verspieltes micro:bit-Pet-Tutorial für die „Campustag Sillgasse" mit kleinen Tipps
 
 ## Step 1
 Um ein verspieltes elektronisches Haustier zu programmieren, lassen wir den micro:bit ein ``||basic:freundliches||`` Gesicht ``||basic:beim Start||`` des Programms anzeigen.
