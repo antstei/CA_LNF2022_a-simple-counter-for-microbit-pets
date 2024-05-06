@@ -1,5 +1,5 @@
 {
-    "name": "[CodeAbility Austria] LNF 2022 – A simple counter for micro:bit pets",
+    "name": "[CodeAbility Austria] A simple counter for micro:bit pets",
     "version": "1.6.1",
     "description": "",
     "dependencies": {
@@ -24,7 +24,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "6.0.25",
+        "target": "6.0.26",
         "targetId": "microbit"
     },
     "supportedTargets": [
